@@ -1046,9 +1046,7 @@ export type ReferenceExpansionAuthor = "manga"[];
 
 /** Reference expansion options for chapter entities or lists */
 export type ReferenceExpansionChapter = (
-  | "manga"
-  | "scanlation_group"
-  | "user"
+  "manga" | "scanlation_group" | "user"
 )[];
 
 /** Reference expansion options for cover art entities or lists */
@@ -1056,11 +1054,7 @@ export type ReferenceExpansionCoverArt = ("manga" | "user")[];
 
 /** Reference expansion options for manga entities or lists */
 export type ReferenceExpansionManga = (
-  | "manga"
-  | "cover_art"
-  | "author"
-  | "artist"
-  | "tag"
+  "manga" | "cover_art" | "author" | "artist" | "tag"
 )[];
 
 /** Reference expansion options for manga relation entities or lists */
