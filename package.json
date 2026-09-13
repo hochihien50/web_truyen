@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "devfast": "next dev --turbo",
-    "build": "corepack enable && yarn --frozen-lockfile install && npm run build",
-    "start": "next start",
+"scripts": {
+  "build": "corepack enable && corepack prepare yarn@4.5.1 --activate && yarn install --immutable && ..."
+}    "start": "next start",
     "format": "prettier --write .",
     "lint:fix": "eslint --fix .",
     "prepare": "npx husky"
